@@ -1,0 +1,40 @@
+/* Limit main section width */
+main {
+  max-width: 840px;
+}
+
+/* Style for aside box */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* Ensure aside image stays proportional */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Style for profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px; /* optional enhancement */
+}
+
+/* Remove padding on paragraphs */
+p {
+  padding: 0;
+}
+
+/* Style the footer */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
