@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #004e64;
+    --accent1-color: #007a8c;
+    --accent2-color: #fff;
+    --heading-font: "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* FIXED — removed the extra } */
+.socialmedia img {
+    width: 32px;
+    height: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 16px;
+    opacity: 0.8;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 70%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+}
