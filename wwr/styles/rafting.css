@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #004e64;
-    --accent1-color: #007a8c;
-    --accent2-color: #fff;
-    --heading-font: "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #004e64;
+  --accent1-color: #007a8c;
+  --heading-font: "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+  /* --accent2-color: #fff;  ← remove this */
 }
+
 
 * {
     margin: 0;
@@ -33,9 +34,11 @@ nav, p, section, article {
 }
 
 /* FIXED — removed the extra } */
+
+
 .socialmedia img {
-    width: 32px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
 
 /* HERO SECTION */
