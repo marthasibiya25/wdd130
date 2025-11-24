@@ -1,45 +1,61 @@
-/* Limit main section width */
-main {
-  max-width: 840px;
+/* nav */
+nav {
+    background-color: #333;
+    padding: 1rem;
 }
 
-/* Style for aside box */
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
-
-/* Ensure aside image stays proportional */
-
-
-aside img {
-    width: 100%;        /* Makes the image fit nicely in the aside */
-    max-width: 250px;   /* Controls maximum size so it stays normal */
-    height: auto;       /* Keeps the image proportional */
-    border-radius: 8px; /* Smooth rounded corners */
+nav a {
+    color: white;
+    padding: 0.5rem;
     display: block;
-    margin: 0 auto;     /* Centers the image */
+    text-decoration: none;
 }
-/* Style for profile image inside main */
+
+/* main */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* h1 */
+h1 {
+    color: #2a4b8d;
+}
+
+/* main img (profile image) */
 main img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px; /* optional enhancement */
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px #999;
 }
 
-/* Remove padding on paragraphs */
+/* aside */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    color: #000;
+    text-align: center;
+}
+
+/* aside img */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* p */
 p {
-  padding: 0;
+    padding: 0;
 }
 
-/* Style the footer */
+/* footer */
 footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    text-align: center;
 }
