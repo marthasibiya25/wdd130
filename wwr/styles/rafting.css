@@ -1,18 +1,25 @@
-/* ===== Reset ===== */
+/* ======================
+   RESET
+====================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== CSS Variables ===== */
+/* ======================
+   CSS VARIABLES
+====================== */
 :root {
-    --primary-color: #2a4b8d;
-    --accent-color: #1d3463;
-    --light-gray: #f5f5f5;
+    --primary-color: #0a4d68;
+    --accent-color: #ffbb00;
+    --text-dark: #222;
+    --text-light: #fff;
 }
 
-/* ===== Hero Section ===== */
+/* ======================
+   HERO SECTION
+====================== */
 .hero {
     position: relative;
 }
@@ -25,81 +32,36 @@
 
 .hero h1 {
     position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px black;
+    top: 20px;
+    left: 20px;
+    color: var(--text-light);
 }
 
 .hero article {
     position: absolute;
-    bottom: 60px;
-    right: 20px;
-    width: 260px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1rem;
-    border-radius: 10px;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    max-width: 400px;
 }
 
 .hero article img {
     float: right;
-    width: 120px;
-    margin-left: 10px;
+    width: 150px;
+    margin-left: 15px;
+    border-radius: 5px;
 }
 
-/* ===== Header ===== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 2px solid #ddd;
-}
-
-header img {
-    width: 120px;
-}
-
-/* ===== Navigation ===== */
-nav {
-    background-color: var(--primary-color);
-    padding: 0.5rem;
-}
-
+/* ======================
+   SOCIAL MEDIA LINKS
+====================== */
+.socialmedia a,
+footer a,
 nav a {
     text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
 }
-
-nav a:hover {
-    background-color: var(--accent-color);
-}
-
-/* ===== Main Layout ===== */
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-/* ===== Footer ===== */
-footer {
-    padding: 1rem;
-    background-color: var(--light-gray);
-    margin-top: 2rem;
-    border-top: 2px solid #ccc;
-    text-align: center;
-}
-
-footer nav.socialmedia a {
-    text-decoration: none;
-}
-
-footer nav.socialmedia img {
-    width: 30px;
-    margin: 0 .3rem;
+.socialmedia img {
+    width: 40px;
+    height: 40px;
 }
