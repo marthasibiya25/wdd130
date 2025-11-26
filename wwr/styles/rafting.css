@@ -65,3 +65,129 @@ nav a {
     width: 40px;
     height: 40px;
 }
+
+
+
+/* ======================
+   RESET
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================
+   CSS VARIABLES
+====================== */
+:root {
+    --primary-color: #0a4d68;
+    --accent-color: #ffbb00;
+    --text-dark: #222;
+    --text-light: #fff;
+}
+
+/* ======================
+   GENERAL PAGE STYLES
+====================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* ======================
+   HEADER + NAV
+====================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--primary-color);
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ======================
+   HERO SECTION
+====================== */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--text-light);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 140px;
+    margin-left: 15px;
+    border-radius: 6px;
+}
+
+/* ======================
+   MISSION SECTION
+====================== */
+.mission img {
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* ======================
+   SOCIAL MEDIA ICONS
+====================== */
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    margin-top: 40px;
+}
