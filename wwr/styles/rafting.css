@@ -1,4 +1,4 @@
-/* Universal reset */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,33 +15,41 @@
     --overlay-dark: rgba(0, 0, 0, 0.5);
 }
 
-/* Body styling */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: var(--text-dark);
+    line-height: 1.6;
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--text-light); /* Fixed contrast */
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    justify-content: space-between;
 }
 
-header nav a {
-    color: var(--text-light); /* Fix contrast issue */
+/* Navigation Links */
+nav a {
     text-decoration: none;
-    margin-left: 15px;
+    color: var(--accent-color); /* Using accent color */
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    text-align: left;
+    max-height: 500px;
+    overflow: hidden;
 }
 
 .hero img {
@@ -52,45 +60,79 @@ header nav a {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 20%;
+    left: 10%;
     color: var(--text-light);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--card-bg);
-    padding: 10px;
-    float: right;
+    bottom: 10%;
+    left: 10%;
+    background-color: var(--overlay-dark);
+    padding: 1rem;
+    color: var(--text-light);
 }
 
 .hero article img {
     float: right;
-    max-width: 150px;
-    margin-left: 10px;
+    max-width: 200px;
+    margin-left: 1rem;
 }
 
 /* Main Sections */
-section {
-    padding: 20px;
-    background-color: var(--card-bg);
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
+main section {
+    padding: 2rem;
+}
+
+main section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 /* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 10px 20px;
-    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer nav.socialmedia a img {
-    width: 25px;
-    margin: 0 5px;
+footer p {
+    margin: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.socialmedia a img {
+    width: 30px;
+    height: auto;
+}
+
+/* Cards / Misc */
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+/* Buttons (example usage of accent color) */
+button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
 }
