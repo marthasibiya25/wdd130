@@ -36,14 +36,15 @@ header img {
 }
 
 header nav a {
-    color: var(--text-light); /* White text for contrast */
+    color: #ffffff; /* White text for good contrast */
     text-decoration: none;
     margin-left: 1.5rem;
 }
 
 header nav a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Optional hover effect */
 }
+
 
 /* 5. Hero Section */
 .hero {
