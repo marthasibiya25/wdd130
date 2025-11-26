@@ -1,4 +1,3 @@
-/* 1. Universal CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +36,7 @@ header img {
 }
 
 header nav a {
-    color: var(--text-light);
+    color: var(--text-light); /* White text for contrast */
     text-decoration: none;
     margin-left: 1.5rem;
 }
