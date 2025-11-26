@@ -1,4 +1,4 @@
-/* Universal Reset */
+/* Universal CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -25,114 +25,109 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-color);
-    color: var(--text-light); /* Fixed contrast */
-    padding: 1rem 2rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
 }
 
-/* Navigation Links */
-nav a {
+header img {
+    height: 50px;
+}
+
+header nav a {
+    color: var(--text-light);
     text-decoration: none;
-    color: var(--accent-color); /* Using accent color */
-    margin: 0 1rem;
-    font-weight: bold;
+    margin-left: 1.5rem;
 }
 
-nav a:hover {
-    text-decoration: underline;
+header nav a:hover {
+    color: var(--accent-color);
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    max-height: 500px;
+    width: 100%;
+    height: 500px;
     overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-dark);
+    z-index: 1;
 }
 
 .hero h1 {
     position: absolute;
     top: 20%;
     left: 10%;
-    color: var(--text-light);
+    color: var(--accent-color); /* Strong contrast for readability */
     font-size: 3rem;
+    z-index: 2;
 }
 
 .hero article {
     position: absolute;
-    bottom: 10%;
+    top: 50%;
     left: 10%;
-    background-color: var(--overlay-dark);
+    width: 40%;
+    color: var(--text-dark);
+    background-color: var(--card-bg);
     padding: 1rem;
-    color: var(--text-light);
+    z-index: 2;
 }
 
 .hero article img {
     float: right;
-    max-width: 200px;
+    width: 80px;
     margin-left: 1rem;
 }
 
-/* Main Sections */
-main section {
+/* Sections */
+section {
     padding: 2rem;
 }
 
-main section h2 {
-    margin-bottom: 1rem;
+section h2 {
     color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-.socialmedia a {
-    text-decoration: none;
-    margin-left: 1rem;
-}
-
-.socialmedia a img {
-    width: 30px;
-    height: auto;
-}
-
-/* Cards / Misc */
-.card {
-    background-color: var(--card-bg);
+    text-align: center;
     padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
 }
 
-/* Buttons (example usage of accent color) */
-button {
-    background-color: var(--accent-color);
-    border: none;
-    padding: 0.5rem 1rem;
-    color: var(--text-dark);
-    cursor: pointer;
-    border-radius: 5px;
+footer nav.socialmedia {
+    margin-top: 0.5rem;
 }
 
-button:hover {
-    opacity: 0.9;
+footer nav.socialmedia a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer nav.socialmedia img {
+    width: 30px;
+    vertical-align: middle;
 }
