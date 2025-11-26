@@ -1,3 +1,4 @@
+/* 1. Universal CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -35,14 +36,15 @@ header img {
     height: 50px;
 }
 
+/* Header links */
 header nav a {
-    color: #ffffff; /* White text for good contrast */
+    color: var(--text-light); /* White text for high contrast */
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 1.5rem; /* spacing between links */
 }
 
 header nav a:hover {
-    color: var(--accent-color); /* Optional hover effect */
+    color: var(--accent-color); /* Optional hover color */
 }
 
 
@@ -70,11 +72,12 @@ header nav a:hover {
     z-index: 1;
 }
 
+/* Fix: Hero h1 contrast */
 .hero h1 {
     position: absolute;
     top: 20%;
     left: 10%;
-    color: var(--primary-color); /* Dark text for good contrast */
+    color: var(--text-light); /* White for high contrast */
     font-size: 3rem;
     z-index: 2;
 }
