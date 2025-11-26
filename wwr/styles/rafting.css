@@ -1,5 +1,5 @@
 /* ======================
-   RESET
+   GLOBAL RESET
 ====================== */
 * {
     margin: 0;
@@ -14,7 +14,9 @@
     --primary-color: #0a4d68;
     --accent-color: #ffbb00;
     --text-dark: #222;
-    --text-light: #fff;
+    --text-light: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --overlay-dark: rgba(0, 0, 0, 0.5);
 }
 
 /* ======================
@@ -24,17 +26,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
+    background-color: #f5f5f5;
 }
 
 /* ======================
-   HEADER + NAV
+   HEADER + NAVIGATION
 ====================== */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
     background: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img {
@@ -42,10 +46,14 @@ header img {
 }
 
 nav a {
-    margin: 0 10px;
     color: var(--text-light);
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
 }
 
 /* ======================
@@ -53,6 +61,7 @@ nav a {
 ====================== */
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero img {
@@ -65,17 +74,18 @@ nav a {
     position: absolute;
     top: 20px;
     left: 20px;
+    background: var(--overlay-dark);
     color: var(--text-light);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 6px;
+    font-size: 2rem;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--card-bg);
     padding: 20px;
     max-width: 400px;
     border-radius: 8px;
@@ -89,35 +99,35 @@ nav a {
 }
 
 /* ======================
-   MISSION SECTION
-====================== */
-.mission img {
-    width: 200px;
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-/* ======================
    SOCIAL MEDIA ICONS
 ====================== */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .socialmedia img {
     width: 40px;
     height: 40px;
+    transition: transform 0.2s ease;
 }
 
-.socialmedia a {
-    text-decoration: none;
-    margin: 0 10px;
+.socialmedia img:hover {
+    transform: scale(1.1);
 }
 
 /* ======================
    FOOTER
 ====================== */
 footer {
-    text-align: center;
-    padding: 20px;
     background: var(--primary-color);
     color: var(--text-light);
-    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
 }
