@@ -31,8 +31,11 @@ header {
     background-color: var(--primary-color);
 }
 
-header img {
+header img  {
     height: 50px;
+    background-color: white;   /* improves contrast */
+    padding: 4px;
+    border-radius: 6px;
 }
 
 /* Header links */
@@ -120,8 +123,8 @@ footer {
     padding: 1rem;
 }
 
-footer nav.socialmedia {
-    margin-top: 0.5rem;
+footer nav.socialmedia img {
+    width: 30px;
 }
 
 footer nav.socialmedia a {
