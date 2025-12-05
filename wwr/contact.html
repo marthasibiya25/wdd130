@@ -3,86 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about White Water Rafting Co.—our mission, history, and thrilling adventures for all experience levels.">
-    <meta name="author" content="Martha Sibiya">
-    <title>White Water Rafting | About Us</title>
+    <title>White Water Rafting | Contact Us</title>
+    <meta name="description" content="Contact our White Water Rafting team for reservations, questions, and general inquiries. We are here to help you plan your next rafting adventure.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-    <!-- Header with navigation -->
     <header>
-        <div class="header-container">
-            <img src="images/z-crossedoars-logo.jpeg" alt="Rafting Site Logo">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
+        <img src="images/logo.png" alt="Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main content -->
     <main>
-        <!-- Hero Section -->
-        <div class="hero">
-            <img src="images/hero-5.jpg" alt="Rafting on a river" loading="lazy">
-            <div class="overlay"></div>
-            <h1>White Water Rafting Co.</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client" loading="lazy">
-                <p>Join us for thrilling river adventures! Experience excitement and safety with every trip.</p>
-            </article>
-        </div>
 
-        <!-- History Section -->
-        <section>
-            <h2>History</h2>
-            <p>Our rafting company has been providing unforgettable experiences since 2010. We focus on safety, fun, and adventure for all skill levels.</p>
+        <h1>Contact Us</h1>
+
+        <!-- Company Information -->
+        <section class="company-info">
+            <h2>Our Information</h2>
+            <p><strong>Address:</strong> 123 River Run Road, Rapid City, USA</p>
+            <p><strong>Phone:</strong> +1 800 555 1234</p>
+            <p><strong>Email:</strong> info@raftingadventures.com</p>
+
+            <h3>Find Us Here:</h3>
+            <!-- Google Map Embed (removed inline style as required) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434510451!2d144.9537363153151!3d-37.81627974202109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3e1f1fb%3A0xfbcd9c5b061b85d0!2sRiver!5e0!3m2!1sen!2sus!4v1617200000000!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
         </section>
 
-        <!-- Adventure Section -->
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventures">
+        <!-- Employee Section -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-grid">
                 <figure>
-                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo" loading="lazy">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/employee1.jpg" alt="John - Senior River Guide">
+                    <figcaption>John – Senior River Guide</figcaption>
                 </figure>
+
                 <figure>
-                    <img src="images/big-mallard.jpg" alt="Big Mallard" loading="lazy">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/employee2.jpg" alt="Sara - Safety Manager">
+                    <figcaption>Sara – Safety Manager</figcaption>
                 </figure>
+
                 <figure>
-                    <img src="images/half-day-adventure.jpg" alt="Half Day Adventure" loading="lazy">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/river-sprint.jpg" alt="River Sprint" loading="lazy">
-                    <figcaption>River Sprint</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/water-blast.jpg" alt="Whitewater Blast" loading="lazy">
-                    <figcaption>Whitewater Blast</figcaption>
+                    <img src="images/employee3.jpg" alt="Mike - Reservations Specialist">
+                    <figcaption>Mike – Reservations Specialist</figcaption>
                 </figure>
             </div>
         </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Purpose (Radio Buttons) -->
+                <fieldset class="purpose-field">
+                    <legend>Purpose of Message:</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <!-- Message Box -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <!-- Newsletter Subscription -->
+                <label class="checkbox-label">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 White Water Rafting Co. | Martha Sibiya</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="images/facebook-logo.svg" alt="Visit us on Facebook">
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="images/twitter-logo.svg" alt="Visit us on Twitter">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="images/instagram-logo.svg" alt="Visit our Instagram page">
-            </a>
+        <p>© 2024 White Water Rafting Adventures</p>
+        <nav>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
         </nav>
     </footer>
+
 </body>
 </html>
