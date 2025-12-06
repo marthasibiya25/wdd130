@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting | Home</title>
-    <meta name="description" content="Homepage for the Whitewater Rafting site created for WDD 130.">
-    <meta name="author" content="Martha Sibiya">
-
+    <title>White Water Rafting | Home</title>
+    <meta name="description" content="Experience thrilling white water rafting adventures. Explore trips, sign up for newsletters, and enjoy unforgettable outdoor fun.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -16,22 +14,58 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="#">Contact</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h1>Experience the Thrill of Whitewater Rafting</h1>
-
+        <!-- HERO SECTION -->
         <section class="hero">
-            <img src="images/hero.jpg" alt="Rafting adventure on the river">
+            <img src="images/hero-5-compressed.jpg" alt="Rafting Adventure">
+            <h1>Experience the Thrill of the Rapids</h1>
         </section>
 
-        <p>Welcome to our rafting adventure website! Explore exciting river runs, professional guides, and unforgettable outdoor experiences.</p>
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <form>
+                <label>Name: <input type="text" name="name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <h2>Your Adventure Awaits</h2>
+            <p>Discover our thrilling white water rafting trips!</p>
+            <a class="btn" href="trips.html">View Trips</a>
+        </section>
+
+        <!-- GRID SECTION -->
+        <section class="grid">
+            <div>
+                <img src="images/rafting-hero.jpg" alt="Rafting fun">
+                <h3>Unforgettable Adventures</h3>
+                <p>Explore the wild rivers with safe and exciting guided tours.</p>
+            </div>
+
+            <div>
+                <img src="images/river-sprint.jpg" alt="Rafting river">
+                <h3>Professional Guides</h3>
+                <p>Our trained experts ensure safety and maximum fun.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 | Whitewater Rafting | Martha Sibiya</p>
+        <p>©2025 | White Water Rafting | Martha Sibiya</p>
+        <nav class="social">
+            <a href="#"><img src="images/facebook-logo.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-logo.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-logo.svg" alt="Twitter"></a>
+        </nav>
     </footer>
 </body>
 </html>
