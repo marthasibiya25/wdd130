@@ -1,10 +1,12 @@
+/* ============================
+   GLOBAL RESET & VARIABLES
+   ============================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. CSS Variables */
 :root {
     --primary-color: #0a4d68;
     --accent-color: #ffbb00;
@@ -14,7 +16,9 @@
     --overlay-dark: rgba(0, 0, 0, 0.5);
 }
 
-/* 3. Body */
+/* ============================
+   BODY
+   ============================ */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -22,7 +26,9 @@ body {
     line-height: 1.6;
 }
 
-/* 4. Header */
+/* ============================
+   HEADER
+   ============================ */
 header {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
@@ -47,17 +53,21 @@ header nav a {
     color: var(--text-light);
     text-decoration: none;
     margin-left: 1.5rem;
+    font-weight: 500;
 }
 
 header nav a:hover {
     color: var(--accent-color);
 }
 
-/* 5. Hero Section */
+/* ============================
+   HERO SECTION
+   ============================ */
 .hero {
     position: relative;
     width: 100%;
     height: 500px;
+    overflow: hidden;
 }
 
 .hero img {
@@ -68,15 +78,18 @@ header nav a:hover {
 
 .hero .overlay {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--overlay-dark);
     z-index: 1;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%; left: 10%;
+    top: 25%;
+    left: 10%;
     color: var(--text-light);
     font-size: 3rem;
     z-index: 2;
@@ -84,11 +97,13 @@ header nav a:hover {
 
 .hero article {
     position: absolute;
-    top: 50%; left: 10%;
+    top: 55%;
+    left: 10%;
     width: 40%;
     background-color: var(--card-bg);
     color: var(--text-dark);
     padding: 1rem;
+    border-radius: 8px;
     z-index: 2;
 }
 
@@ -98,7 +113,9 @@ header nav a:hover {
     margin-left: 1rem;
 }
 
-/* 6. Sections */
+/* ============================
+   SECTIONS
+   ============================ */
 section {
     padding: 2rem;
 }
@@ -112,7 +129,9 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* Adventure Grid */
+/* ============================
+   ADVENTURES GRID (ABOUT PAGE)
+   ============================ */
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -130,7 +149,9 @@ section p {
     border-radius: 5px;
 }
 
-/* 7. Footer */
+/* ============================
+   FOOTER
+   ============================ */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -145,63 +166,41 @@ footer nav.socialmedia a img {
     height: 40px;
     margin-left: 0.5rem;
     object-fit: contain;
+    transition: 0.2s ease;
 }
 
 footer nav.socialmedia a img:hover {
     transform: scale(1.15);
-    transition: 0.2s ease;
 }
 
 /* ============================
-   CONTACT PAGE STYLES
+   CONTACT PAGE
    ============================ */
-
-/* Main page spacing */
 main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Headings */
 main h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-/* ============================
-   COMPANY INFORMATION SECTION
-   ============================ */
-
+/* Company Info */
 .company-info {
     margin-bottom: 3rem;
 }
 
-.company-info h2 {
-    margin-bottom: 1rem;
-}
-
-.company-info p {
-    margin: .3rem 0;
-}
-
-/* Google Map */
 .company-info iframe {
     width: 100%;
     height: 350px;
-    border: 0; /* required to remove inline border */
     margin-top: 1rem;
+    border: 0;
     border-radius: 8px;
 }
 
-/* ============================
-   EMPLOYEE TEAM SECTION
-   ============================ */
-
-.employees {
-    margin-bottom: 3rem;
-}
-
+/* Employee Grid */
 .employee-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -215,48 +214,34 @@ main h1 {
     max-width: 220px;
     height: auto;
     border-radius: 10px;
-    display: block;
     margin: 0 auto;
 }
 
 .employee-grid figcaption {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-weight: 600;
 }
 
-/* ============================
-   CONTACT FORM
-   ============================ */
-
-.contact-form {
-    margin-bottom: 4rem;
-}
-
+/* Contact Form */
 .contact-form form {
     display: grid;
     gap: 1rem;
     max-width: 600px;
 }
 
-.contact-form label {
-    font-weight: bold;
-}
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    padding: .7rem;
+    padding: 0.7rem;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 1rem;
 }
 
-.contact-form textarea {
+textarea {
     resize: vertical;
 }
 
-/* Fieldset for radio buttons */
 .purpose-field {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -265,103 +250,80 @@ main h1 {
 
 .purpose-field legend {
     font-weight: bold;
-    padding: 0 .5rem;
 }
 
 .purpose-field label {
     display: block;
-    margin: .5rem 0;
-    font-weight: normal;
+    margin: 0.5rem 0;
 }
 
-/* Newsletter checkbox */
+/* Checkbox */
 .checkbox-label {
     display: flex;
     align-items: center;
-    gap: .5rem;
-    font-weight: normal;
+    gap: 0.5rem;
 }
 
 /* Submit Button */
 .contact-form button[type="submit"] {
     background-color: #125784;
     color: white;
-    padding: .8rem 1.3rem;
+    padding: 0.8rem 1.3rem;
     border: none;
     border-radius: 6px;
     font-size: 1.1rem;
     cursor: pointer;
-    width: fit-content;
 }
 
 .contact-form button[type="submit"]:hover {
     background-color: #0f476d;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-}
-.hero img {
-    width: 100%;
-    height: auto;
-}
-.hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color: white;
-    font-size: 3rem;
-}
-
-/* GRID FOR HOME PAGE */
+/* ============================
+   HOME PAGE GRID
+   ============================ */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem;
 }
+
 .grid img {
     width: 100%;
     border-radius: 8px;
 }
 
-/* TRIPS GRID */
+/* ============================
+   TRIPS PAGE
+   ============================ */
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
 }
-.trip-card img {
-    width: 100%;
-}
+
 .trip-card {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 8px;
 }
 
-/* TABLE */
+.trip-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Trips Table */
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
 }
-.trip-table th, .trip-table td {
+
+.trip-table th,
+.trip-table td {
     padding: 10px;
     border: 1px solid #bbb;
     text-align: center;
-}
-
-
-footer nav.socialmedia a img {
-    width: 40px;
-    height: 40px;
-    margin-left: 0.5rem;
-    object-fit: contain;
-}
-
-footer nav.socialmedia a img:hover {
-    transform: scale(1.15);
-    transition: 0.2s ease;
 }
