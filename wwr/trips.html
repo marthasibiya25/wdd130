@@ -3,35 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting | Home</title>
-    <meta name="description" content="Homepage for the Whitewater Rafting site created for WDD 130.">
-    <meta name="author" content="Martha Sibiya">
-
+    <title>White Water Rafting | Trips</title>
+    <meta name="description" content="Explore our rafting trip packages with details, photos, and booking information.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo-rafting.jpeg" alt="Rafting Site Logo">
+        <img src="images/logo.png" alt="Rafting logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="#">Contact</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h1>Experience the Thrill of Whitewater Rafting</h1>
-
-        <section class="hero">
-            <img src="images/hero.jpg" alt="Rafting adventure on the river">
+        <!-- CALL TO ACTION -->
+        <section class="cta trips-cta">
+            <h1>Choose Your Rafting Adventure</h1>
+            <p>Have questions? We’re here to help.</p>
+            <a class="btn" href="contact.html">Contact Us</a>
         </section>
 
-        <p>Welcome to our rafting adventure website! Explore exciting river runs, professional guides, and unforgettable outdoor experiences.</p>
+        <!-- TRIP DESCRIPTIONS -->
+        <section class="trips-grid">
+            <div class="trip-card">
+                <img src="images/trip1.jpg" alt="Beginner Rapids">
+                <h2>Beginner Rapids</h2>
+                <p>Perfect for families and first-timers. Calm waters with small waves.</p>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/trip2.jpg" alt="Intermediate Challenge">
+                <h2>Intermediate Challenge</h2>
+                <p>A balanced mix of excitement and safety for adventure seekers.</p>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/trip3.jpg" alt="Extreme Rapids">
+                <h2>Extreme Rapids</h2>
+                <p>High-intensity white water action for experienced rafters only!</p>
+            </div>
+        </section>
+
+        <!-- TRIP TABLE -->
+        <section class="trip-table">
+            <h2>Available Trips</h2>
+            <table>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Difficulty</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Beginner Rapids</td>
+                    <td>Easy</td>
+                    <td>3 hours</td>
+                    <td>$49</td>
+                </tr>
+
+                <tr>
+                    <td>Intermediate Challenge</td>
+                    <td>Moderate</td>
+                    <td>5 hours</td>
+                    <td>$89</td>
+                </tr>
+
+                <tr>
+                    <td>Extreme Rapids</td>
+                    <td>Hard</td>
+                    <td>7 hours</td>
+                    <td>$129</td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 | Whitewater Rafting | Martha Sibiya</p>
+        <p>©2025 | White Water Rafting | Martha Sibiya</p>
+        <nav class="social">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </nav>
     </footer>
 </body>
 </html>
