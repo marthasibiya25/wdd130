@@ -161,17 +161,23 @@ footer {
     align-items: center;
 }
 
+  /* === SOCIAL MEDIA ICONS (applies to ALL pages) === */
+footer nav.socialmedia a img,
+footer .socialmedia a img,
 footer .social img {
     width: 23px;
     height: 23px;
     object-fit: contain;
-    margin: 0 8px;
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
 }
 
-
-footer nav.socialmedia a img:hover {
+footer nav.socialmedia a img:hover,
+footer .socialmedia a img:hover,
+footer .social img:hover {
     transform: scale(1.15);
 }
+  
 
 /* ============================
    CONTACT PAGE
